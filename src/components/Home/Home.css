@@ -1,0 +1,23 @@
+.home-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 10px;
+}
+.search-input{
+    padding: 15px;
+    width: 50%;
+}
+.btn-search{
+    padding: 14px 17px;
+    background-color: steelblue;
+    color: white;
+    font-weight: 600;
+}
+.btn-search:hover{
+    background-color: cadetblue;
+}
+.cart{
+    border: 1px solid gray;
+    box-shadow: 4px 4px 8px gray;
+    border-radius: 5px;
+}
