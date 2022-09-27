@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Players from '../Players/Players';
 import './Home.css'
 import { toast } from 'react-toastify';
+import Swal from 'sweetalert2'
+
 
 
 const Home = () => {
@@ -19,7 +21,8 @@ const Home = () => {
         const leftPlayer = cart.filter((pd) => pd.idPlayer !== id); 
         setCart(leftPlayer);
         toast('wow deleted');
-    }
+        Swal.fire("good job!", "you clicked the button ", "success");
+    };
 
     return (
         <div>
